@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>r星吃瓜每日大赛-每日吃瓜大赛看点_通勤吃瓜速览_和普通爆料号区别</title>
+<meta name="description" content="r星吃瓜每日大赛是围绕每日爆料擂台与吃瓜看点的内容门户，整理每日大赛赛况、爆料条目、热门瓜与选手动态，适合通勤速览和睡前追更。">
+<meta name="keywords" content="每日爆料擂台,吃瓜大赛看点,爆料条目整理,吃瓜速览,选手动态">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1030'/%3E%3Cpath d='M18 22h28v6H18zM18 34h18v6H18z' fill='%23ffb648'/%3E%3Ccircle cx='46' cy='42' r='7' fill='%23ff5d73'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0f0a1a;
+  --bg2:#151021;
+  --panel:#1c142c;
+  --panel2:#241936;
+  --line:#352747;
+  --text:#efe8f7;
+  --muted:#a99cbd;
+  --dim:#7d7091;
+  --brand:#ffb648;
+  --brand2:#ff5d73;
+  --accent:#8b7bff;
+  --ok:#4fd1a5;
+  --r:10px;
+  --shadow:0 6px 24px rgba(0,0,0,.35);
+  --ann-h:38px;
+  --head-h:64px;
+  --max:1380px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(900px 420px at 82% -8%, rgba(139,123,255,.20), transparent 62%),
+    radial-gradient(700px 360px at 8% 2%, rgba(255,93,115,.12), transparent 60%),
+    var(--bg);
+  color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0 0 10px}
+ul,ol{margin:0;padding:0;list-style:none}
+img,svg{max-width:100%}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:4px}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.stickwrap{
+  position:sticky;top:0;z-index:60;
+  backdrop-filter:blur(10px);
+}
+.annbar{
+  height:var(--ann-h);
+  display:flex;align-items:center;justify-content:center;
+  gap:14px;
+  background:linear-gradient(90deg,#8b7bff,#ff5d73 55%,#ffb648);
+  color:#150d22;
+  font-size:13px;font-weight:700;
+  padding:0 14px;
+  white-space:nowrap;overflow:hidden;
+}
+.annbar .dot{width:6px;height:6px;border-radius:50%;background:#150d22;flex:none}
+.annbar .ann-txt{overflow:hidden;text-overflow:ellipsis}
+.annbar a{
+  flex:none;border:1.5px solid rgba(21,13,34,.55);border-radius:99px;
+  padding:1px 10px;font-size:12px;font-weight:800;
+}
+.annbar a:hover{background:rgba(21,13,34,.16)}
+.head{
+  height:var(--head-h);
+  background:rgba(15,10,26,.92);
+  border-bottom:1px solid var(--line);
+}
+.head-in{
+  max-width:var(--max);margin:0 auto;height:100%;
+  display:flex;align-items:center;gap:18px;padding:0 20px;
+}
+.logo{display:flex;align-items:center;gap:10px;flex:none}
+.logo-mark{width:34px;height:34px;flex:none}
+.logo-txt{font-size:19px;font-weight:800;letter-spacing:.4px;white-space:nowrap}
+.logo-txt em{font-style:normal;color:var(--brand)}
+.head-nav{display:flex;gap:4px;margin-left:6px;flex-wrap:nowrap;overflow:hidden}
+.head-nav a{
+  font-size:13.5px;color:var(--muted);padding:6px 10px;border-radius:8px;white-space:nowrap;
+}
+.head-nav a:hover{color:var(--text);background:var(--panel2)}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:10px;flex:none}
+.searchbox{
+  display:flex;align-items:center;gap:0;
+  background:var(--panel);border:1px solid var(--line);border-radius:99px;
+  padding:3px 4px 3px 12px;
+}
+.searchbox input{
+  width:150px;background:transparent;border:0;color:var(--text);
+  font:inherit;font-size:13px;padding:4px 0;
+}
+.searchbox input::placeholder{color:var(--dim)}
+.searchbox input:focus{outline:none}
+.searchbox button{
+  border:0;border-radius:99px;background:var(--brand);color:#1a1026;
+  font:inherit;font-size:12.5px;font-weight:800;padding:5px 12px;cursor:pointer;
+}
+.searchbox button:hover{filter:brightness(1.08)}
+.btn-ghost{
+  border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:13px;
+  color:var(--muted);background:var(--panel);white-space:nowrap;
+}
+.btn-ghost:hover{color:var(--text);border-color:var(--accent)}
+
+/* 锚点偏移 */
+[id]{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px)}
+
+/* ===== 首屏 ===== */
+.hero{border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(36,25,54,.55),transparent)}
+.hero-in{
+  max-width:var(--max);margin:0 auto;padding:34px 20px 30px;
+  display:grid;grid-template-columns:1.35fr .9fr;gap:34px;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.14em;color:var(--brand);
+  border:1px solid rgba(255,182,72,.35);background:rgba(255,182,72,.08);
+  padding:4px 10px;border-radius:99px;margin-bottom:14px;
+}
+h1{font-size:clamp(28px,3.6vw,44px);letter-spacing:.5px}
+.hero-sub{
+  margin-top:12px;max-width:620px;color:var(--muted);font-size:15px;
+}
+.hero-sub strong{color:var(--text)}
+.hero-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn-primary{
+  background:linear-gradient(135deg,var(--brand),#ff8a5c);
+  color:#1a1026;font-weight:800;padding:10px 20px;border-radius:99px;font-size:14px;
+  box-shadow:0 6px 18px rgba(255,140,80,.28);
+}
+.btn-primary:hover{filter:brightness(1.06)}
+.btn-line{
+  padding:10px 18px;border-radius:99px;border:1px solid var(--line);
+  background:var(--panel);color:var(--text);font-size:14px;
+}
+.btn-line:hover{border-color:var(--accent)}
+.hero-stats{display:flex;gap:22px;margin-top:22px;flex-wrap:wrap}
+.hero-stats div{font-size:12.5px;color:var(--dim)}
+.hero-stats b{display:block;font-size:19px;color:var(--text);font-weight:800}
+.hero-visual{
+  position:relative;border:1px solid var(--line);border-radius:16px;
+  background:
+    radial-gradient(320px 180px at 70% 0%, rgba(255,93,115,.22), transparent 70%),
+    linear-gradient(160deg,#221734,#150f22);
+  padding:18px;box-shadow:var(--shadow);min-height:250px;
+}
+.arena-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--dim);margin-bottom:12px}
+.arena-top b{color:var(--ok);font-weight:800;letter-spacing:.06em}
+.arena-row{
+  display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:9px;
+  background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.05);margin-bottom:8px;
+}
+.arena-row .rk{width:20px;font-weight:800;color:var(--brand);font-size:13px;flex:none}
+.arena-row .nm{font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.arena-row .sc{font-size:12px;color:var(--dim);flex:none}
+.bar{height:4px;border-radius:99px;background:rgba(255,255,255,.10);margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--brand2))}
+
+/* ===== 三栏 ===== */
+.layout{
+  max-width:var(--max);margin:0 auto;padding:26px 20px 10px;
+  display:grid;grid-template-columns:180px minmax(0,1fr) 244px;gap:26px;
+  align-items:start;
+}
+.col-l,.col-r{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 14px);max-height:calc(100vh - var(--ann-h) - var(--head-h) - 28px);overflow:auto;scrollbar-width:thin}
+.col-l::-webkit-scrollbar,.col-r::-webkit-scrollbar{width:6px}
+.col-l::-webkit-scrollbar-thumb,.col-r::-webkit-scrollbar-thumb{background:#33254a;border-radius:9px}
+.side-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:14px;margin-bottom:16px;
+}
+.side-title{
+  font-size:12px;letter-spacing:.12em;color:var(--dim);
+  text-transform:uppercase;margin-bottom:10px;font-weight:800;
+}
+.chnav a{
+  display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);
+  padding:7px 9px;border-radius:8px;margin-bottom:2px;
+}
+.chnav a:hover{background:var(--panel2);color:var(--text)}
+.chnav a i{width:5px;height:5px;border-radius:50%;background:var(--line);flex:none}
+.chnav a:hover i{background:var(--brand)}
+.tagcloud{display:flex;flex-wrap:wrap;gap:6px}
+.tagcloud a{
+  font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:99px;
+  padding:3px 9px;background:var(--bg2);
+}
+.tagcloud a:hover{color:var(--brand);border-color:rgba(255,182,72,.5)}
+
+/* 中栏板块 */
+.sec{margin-bottom:34px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.sec-head h2{font-size:21px;letter-spacing:.3px}
+.sec-head h2 span{color:var(--brand)}
+.sec-desc{font-size:13px;color:var(--dim);margin-top:4px}
+.sec-more{font-size:12.5px;color:var(--muted);border-bottom:1px dashed var(--line);padding-bottom:1px}
+.sec-more:hover{color:var(--brand);border-color:var(--brand)}
+
+/* 简介 */
+.intro{
+  background:linear-gradient(160deg,rgba(36,25,54,.85),rgba(21,16,33,.85));
+  border:1px solid var(--line);border-radius:14px;padding:22px 24px;
+}
+.intro p{color:#d9cfe8;font-size:14.5px}
+.intro .lead{font-size:15.5px;color:var(--text)}
+.intro .lead b{color:var(--brand);font-weight:800}
+.intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.intro-grid div{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:10px 12px}
+.intro-grid b{display:block;color:var(--brand);font-size:13px;margin-bottom:2px}
+.intro-grid span{font-size:12.5px;color:var(--dim)}
+
+/* 热门卡片 */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:14px;display:flex;flex-direction:column;gap:8px;transition:.18s;
+}
+.card:hover{transform:translateY(-2px);border-color:#4a3667;box-shadow:var(--shadow)}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.type{
+  font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px;
+  background:rgba(139,123,255,.16);color:#b7adff;border:1px solid rgba(139,123,255,.28);flex:none;
+}
+.type.hot{background:rgba(255,93,115,.16);color:#ffa3b1;border-color:rgba(255,93,115,.3)}
+.type.new{background:rgba(79,209,165,.14);color:#8ee9cd;border-color:rgba(79,209,165,.28)}
+.card h3{font-size:14.5px;line-height:1.45}
+.card p{font-size:12.8px;color:var(--muted);margin:0;flex:1}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px}
+.card-tags span{font-size:11px;color:var(--dim);background:var(--bg2);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+.card-meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--dim);border-top:1px dashed var(--line);padding-top:8px}
+.card-meta b{color:var(--ok);font-weight:800}
+
+/* 最新更新列表 */
+.updates{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.updates li{display:flex;gap:12px;padding:11px 16px;border-bottom:1px solid var(--line);align-items:baseline}
+.updates li:last-child{border-bottom:0}
+.updates li:hover{background:var(--panel2)}
+.updates .t{font-size:11.5px;color:var(--dim);flex:none;width:44px;font-variant-numeric:tabular-nums}
+.updates .n{font-size:13.8px;font-weight:700;flex:none;max-width:210px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.updates .d{font-size:12.5px;color:var(--muted);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.updates .pill{font-size:11px;color:var(--brand);border:1px solid rgba(255,182,72,.3);border-radius:99px;padding:0 7px;flex:none}
+
+/* 分类入口 */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cat{
+  display:block;background:var(--panel);border:1px solid var(--line);border-radius:9px;
+  padding:11px 12px;transition:.16s;
+}
+.cat:hover{border-color:var(--accent);background:var(--panel2)}
+.cat b{display:block;font-size:13.5px;margin-bottom:3px}
+.cat span{font-size:11.5px;color:var(--dim)}
+
+/* 深度解析 */
+.deep{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 26px}
+.deep h3{font-size:16.5px;margin:22px 0 8px;padding-left:11px;border-left:3px solid var(--brand);color:#fff}
+.deep h3:first-of-type{margin-top:4px}
+.deep p{font-size:14px;color:#d3c8e4;max-width:70ch}
+.deep ul{margin:6px 0 12px;padding-left:2px}
+.deep ul li{font-size:13.8px;color:#c6bad9;padding:4px 0 4px 18px;position:relative}
+.deep ul li::before{content:"";position:absolute;left:2px;top:12px;width:6px;height:6px;border-radius:2px;background:var(--accent);transform:rotate(45deg)}
+.deep .note{
+  background:rgba(139,123,255,.08);border:1px solid rgba(139,123,255,.22);
+  border-radius:9px;padding:12px 14px;font-size:13px;color:#c9bfe6;margin:14px 0;
+}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0 6px}
+.compare > div{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--bg2)}
+.compare h4{font-size:13.5px;margin-bottom:6px;color:var(--brand)}
+.compare ul li{font-size:12.8px;color:var(--muted);padding:3px 0 3px 14px}
+.compare ul li::before{background:var(--ok);width:5px;height:5px;top:11px}
+
+/* 指南步骤 */
+.steps{counter-reset:s;display:grid;gap:10px}
+.step{
+  counter-increment:s;position:relative;padding:12px 16px 12px 52px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+}
+.step::before{
+  content:counter(s,decimal-leading-zero);position:absolute;left:14px;top:13px;
+  font-size:13px;font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums;
+}
+.step b{display:block;font-size:13.8px;margin-bottom:2px}
+.step span{font-size:12.8px;color:var(--muted)}
+
+/* FAQ */
+.faq details{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:0 16px;margin-bottom:9px;
+}
+.faq details[open]{border-color:#4a3667;background:var(--panel2)}
+.faq summary{
+  cursor:pointer;list-style:none;font-size:14px;font-weight:700;
+  padding:13px 26px 13px 0;position:relative;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:0;top:12px;color:var(--brand);
+  font-size:18px;font-weight:400;line-height:1;
+}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{font-size:13.4px;color:var(--muted);padding:0 0 14px;border-top:1px dashed var(--line);margin-top:-2px;padding-top:10px}
+
+/* 评论 */
+.cmts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cmt{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 13px}
+.cmt-top{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.avatar{
+  width:22px;height:22px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-size:11px;font-weight:800;color:#150d22;
+}
+.cmt-top b{font-size:12.8px}
+.cmt-top time{margin-left:auto;font-size:11px;color:var(--dim)}
+.cmt p{font-size:13px;color:var(--muted);margin:0}
+
+/* 资讯 */
+.news{border-top:1px solid var(--line)}
+.news article{padding:13px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start}
+.news time{font-size:12px;color:var(--dim);font-variant-numeric:tabular-nums;padding-top:2px}
+.news h3{font-size:14.2px;margin-bottom:3px}
+.news h3:hover{color:var(--brand)}
+.news p{font-size:12.8px;color:var(--muted);margin:0}
+
+/* 相关推荐 */
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.rel a{
+  display:flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);
+  border-radius:8px;padding:9px 12px;font-size:13px;
+}
+.rel a:hover{border-color:var(--accent);background:var(--panel2)}
+.rel a i{font-style:normal;font-size:11px;color:var(--brand);font-weight:800;flex:none}
+
+/* 精选时间线 */
+.timeline{position:relative;padding-left:20px}
+.timeline::before{content:"";position:absolute;left:5px;top:4px;bottom:4px;width:2px;background:linear-gradient(var(--accent),var(--brand2),transparent)}
+.tl{position:relative;padding:0 0 16px 0}
+.tl::before{content:"";position:absolute;left:-19px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 3px rgba(255,182,72,.15)}
+.tl h3{font-size:14px;margin-bottom:2px}
+.tl p{font-size:12.8px;color:var(--muted);margin:0}
+.tl time{font-size:11.5px;color:var(--dim);display:block;margin-bottom:1px}
+
+/* 右栏 */
+.rail-title{font-size:13px;font-weight:800;margin-bottom:9px;display:flex;align-items:center;gap:7px}
+.rail-title::before{content:"";width:3px;height:13px;border-radius:2px;background:var(--brand)}
+.toc a{display:block;font-size:12.8px;color:var(--muted);padding:4px 0 4px 10px;border-left:1px solid var(--line);position:relative}
+.toc a:hover{color:var(--brand);border-color:var(--brand)}
+.rank li{display:flex;gap:9px;align-items:baseline;padding:6px 0;font-size:13px}
+.rank li .no{font-size:11.5px;font-weight:800;color:var(--dim);width:16px;flex:none;font-variant-numeric:tabular-nums}
+.rank li .no.top{color:var(--brand2)}
+.rank li a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank li a:hover{color:var(--brand)}
+.rank li .heat{margin-left:auto;font-size:11px;color:var(--dim);flex:none}
+.extend a{display:block;font-size:12.8px;color:var(--muted);padding:6px 0;border-bottom:1px dashed var(--line)}
+.extend a:last-child{border-bottom:0}
+.extend a:hover{color:var(--brand)}
+
+/* 搜索无结果 */
+#noResult{
+  display:none;background:rgba(255,93,115,.08);border:1px solid rgba(255,93,115,.3);
+  color:#ffa3b1;border-radius:9px;padding:10px 14px;font-size:13px;margin-bottom:14px;
+}
+/* 筛选隐藏 */
+.is-hidden{display:none !important}
+
+/* 页尾 */
+footer{border-top:1px solid var(--line);background:linear-gradient(180deg,transparent,rgba(36,25,54,.5));margin-top:20px}
+.foot-in{max-width:var(--max);margin:0 auto;padding:32px 20px 18px;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:24px}
+.foot-brand .logo{margin-bottom:10px}
+.foot-brand p{font-size:12.8px;color:var(--dim);max-width:290px}
+.foot-col h4{font-size:12.5px;color:var(--text);margin-bottom:9px;letter-spacing:.06em}
+.foot-col a{display:block;font-size:12.5px;color:var(--dim);padding:3px 0}
+.foot-col a:hover{color:var(--brand)}
+.foot-bottom{
+  max-width:var(--max);margin:0 auto;padding:12px 20px 22px;
+  border-top:1px solid var(--line);font-size:11.8px;color:var(--dim);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+
+/* 平板 */
+@media (max-width:1080px){
+  .layout{grid-template-columns:170px minmax(0,1fr);gap:22px}
+  .col-r{position:static;max-height:none;grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;overflow:visible}
+  .col-r .side-card{margin-bottom:0}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .cats{grid-template-columns:repeat(3,1fr)}
+  .foot-in{grid-template-columns:1fr 1fr}
+  .hero-in{grid-template-columns:1fr;gap:26px}
+}
+/* 手机 */
+@media (max-width:760px){
+  :root{--ann-h:34px}
+  .head-in{padding:0 14px;gap:10px}
+  .head-nav{display:none}
+  .logo-txt{font-size:16.5px}
+  .searchbox input{width:96px}
+  .btn-ghost{display:none}
+  .layout{grid-template-columns:1fr;padding:18px 14px 6px;gap:20px}
+  .col-l{position:static;max-height:none;overflow:visible}
+  .col-l .side-card:first-child{padding:10px}
+  .chnav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+  .chnav::-webkit-scrollbar{display:none}
+  .chnav a{flex:none;border:1px solid var(--line);background:var(--bg2);padding:6px 11px;white-space:nowrap;margin-bottom:0}
+  .chnav a i{display:none}
+  .col-l .side-card:nth-child(2){display:none}
+  .cards{grid-template-columns:1fr}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .cmts{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .rel{grid-template-columns:1fr}
+  .intro{padding:18px}
+  .deep{padding:18px}
+  .updates .n{max-width:120px}
+  .updates .d{display:none}
+  .news article{grid-template-columns:1fr;gap:2px}
+  .col-r{grid-template-columns:1fr}
+  .hero-in{padding:24px 14px 22px}
+  .hero-stats{gap:16px}
+  .foot-in{grid-template-columns:1fr;gap:18px;padding:24px 14px 14px}
+  .annbar{justify-content:flex-start;font-size:12px;gap:8px}
+}
+</style>
+</head>
+<body>
+
+<div class="stickwrap">
+  <div class="annbar" role="status" aria-label="站内公告">
+    <span class="dot" aria-hidden="true"></span>
+    <span class="ann-txt">今日擂台 18:00 结算 · 新增「通勤速览」10 条短评 · 睡前追更清单已更新</span>
+    <a href="#latest">看最新条目</a>
+  </div>
+
+  <header class="head">
+    <div class="head-in">
+      <a class="logo" href="#top" aria-label="返回顶部">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#241936"/>
+          <path d="M16 20h32v7H16z" fill="#ffb648"/>
+          <path d="M16 33h20v7H16z" fill="#8b7bff"/>
+          <circle cx="46" cy="43" r="8" fill="#ff5d73"/>
+          <path d="M42.5 43l2.4 2.5 4.6-5" stroke="#150d22" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-txt">r星吃瓜<em>每日大赛</em></span>
+      </a>
+      <nav class="head-nav" aria-label="主题导航">
+        <a href="#hot">热门擂台</a>
+        <a href="#latest">最新赛况</a>
+        <a href="#cats">分类筛选</a>
+        <a href="#deep">深度解析</a>
+        <a href="#faq">常见问答</a>
+      </nav>
+      <div class="head-tools">
+        <form class="searchbox" role="search" onsubmit="return doSearch(event)">
+          <input id="q" type="search" placeholder="搜瓜名 / 选手 / 标签" aria-label="站内搜索">
+          <button type="submit">查找</button>
+        </form>
+        <a class="btn-ghost" href="#guide">追更指南</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-in">
+      <div>
+        <span class="eyebrow">每日擂台 · 爆料条目 · 选手动态</span>
+        <h1 id="heroTitle">r星吃瓜每日大赛</h1>
+        <p class="hero-sub">
+          每天一场爆料擂台，把散落在各处的瓜整理成<strong>可读的条目、可比的赛况、可追的选手</strong>。
+          通勤 5 分钟看速览，睡前 20 分钟看深度解析，想知道某个瓜到底进没进决赛、哪位选手今天反超，都能在这页找到位置。
+        </p>
+        <div class="hero-acts">
+          <a class="btn-primary" href="#hot">看今日热门擂台</a>
+          <a class="btn-line" href="#latest">追最新赛况</a>
+          <a class="btn-line" href="#cats">按类别筛选</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>12</b>今日候选条目</div>
+          <div><b>6</b>赛道分类</div>
+          <div><b>18:00</b>每日结算</div>
+          <div><b>3</b>种速览长度</div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="今日擂台赛况示意">
+        <div class="arena-top"><span>今日擂台 · 实时排位</span><b>进行中</b></div>
+        <div class="arena-row">
+          <span class="rk">01</span>
+          <span class="nm">深夜录音棚改词风波</span>
+          <span class="sc">9.4</span>
+        </div>
+        <div class="bar"><i style="width:94%"></i></div>
+        <div class="arena-row" style="margin-top:8px">
+          <span class="rk">02</span>
+          <span class="nm">联名款发售名单争议</span>
+          <span class="sc">8.9</span>
+        </div>
+        <div class="bar"><i style="width:89%"></i></div>
+        <div class="arena-row" style="margin-top:8px">
+          <span class="rk">03</span>
+          <span class="nm">巡演加场城市投票</span>
+          <span class="sc">8.5</span>
+        </div>
+        <div class="bar"><i style="width:85%"></i></div>
+        <div class="arena-row" style="margin-top:8px">
+          <span class="rk">04</span>
+          <span class="nm">旧访谈片段被翻出</span>
+          <span class="sc">7.8</span>
+        </div>
+        <div class="bar"><i style="width:78%"></i></div>
+        <p style="font-size:11.5px;color:var(--dim);margin:12px 0 0">评分综合讨论量、信息完整度与后续进展，仅作站内排位参考。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+
+    <!-- 左栏 -->
+    <aside class="col-l" aria-label="频道与标签索引">
+      <div class="side-card">
+        <div class="side-title">频道导航</div>
+        <nav class="chnav" aria-label="频道列表">
+          <a href="#intro"><i></i>擂台简介</a>
+          <a href="#hot"><i></i>今日热门瓜</a>
+          <a href="#latest"><i></i>最新赛况</a>
+          <a href="#cats"><i></i>赛道分类</a>
+          <a href="#deep"><i></i>赛制深度解析</a>
+          <a href="#guide"><i></i>追更指南</a>
+          <a href="#faq"><i></i>常见问答</a>
+          <a href="#cmts"><i></i>观众评论</a>
+          <a href="#news"><i></i>相关资讯</a>
+          <a href="#rel"><i></i>相关推荐</a>
+          <a href="#timeline"><i></i>今日时间线</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <div class="side-title">热门标签</div>
+        <div class="tagcloud">
+          <a href="#hot">深夜录音棚</a>
+          <a href="#hot">联名发售</a>
+          <a href="#hot">巡演加场</a>
+          <a href="#cats">选手反超</a>
+          <a href="#cats">旧料翻新</a>
+          <a href="#cats">商务合作</a>
+          <a href="#latest">决赛名单</a>
+          <a href="#latest">通勤速览</a>
+          <a href="#faq">瓜真不真</a>
+          <a href="#rel">睡前追更</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 中栏 -->
+    <div class="col-m">
+
+      <!-- 1 简介 -->
+      <section class="sec" id="intro" aria-labelledby="introTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="introTitle">擂台简介：<span>每天一场爆料比拼</span></h2>
+            <p class="sec-desc">把零散爆料整理成有赛制、有排位、有后续的内容</p>
+          </div>
+        </div>
+        <div class="intro">
+          <p class="lead"><b>r星吃瓜每日大赛</b>是一个每天更新的爆料擂台栏目：当天出现的瓜会被收进候选池，按赛道归类，再由讨论量、信息完整度和后续进展三项打成排位，18:00 结算出当日名次。它不是简单的瓜田罗列，而是把"这条瓜现在到哪一步了"讲清楚——谁发的、有没有二次回应、有没有被证伪、明天还值不值得追。</p>
+          <p>对只想快速扫一眼的人来说，这里有 3 分钟就能读完的每日速览；对习惯睡前慢慢看的人，深度解析会把赛制、赛道划分和选手反超的逻辑拆开讲。常见的搜索需求包括"今天的爆料擂台有哪些新条目""某个瓜进决赛了吗""通勤路上怎么看完整赛况"，这些都能从分类筛选和最新赛况两个入口进入。</p>
+          <p>擂台内容按赛道区分：作品与创作、商务与联名、行程与巡演、旧料翻新、选手动态、观众侧讨论。不同赛道的评判侧重不一样，创作类更看信息源是否可回溯，商务类更看官方口径，行程类更看时间地点是否对得上。理解这一点，看排位就不会只盯着分数。</p>
+          <p>每天结算后，未进决赛的条目会进入"待观察"区，第二天仍可能被翻出来重新参赛。这也是每日大赛和普通爆料号最大的区别：它有明确的时效边界，也有跨天的连续性。</p>
+          <div class="intro-grid">
+            <div><b>当日候选</b><span>12 条起，按赛道归位</span></div>
+            <div><b>结算时间</b><span>每日 18:00 出排位</span></div>
+            <div><b>阅读长度</b><span>速览 / 标准 / 深度三档</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 热门推荐 -->
+      <section class="sec" id="hot" aria-labelledby="hotTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="hotTitle">今日热门擂台：<span>9 条高讨论瓜</span></h2>
+            <p class="sec-desc">按当前排位排序，含条目看点与后续状态</p>
+          </div>
+          <a class="sec-more" href="#latest">看全部赛况</a>
+        </div>
+        <div class="cards" id="hotCards">
+          <article class="card">
+            <div class="card-top"><span class="type hot">创作赛道</span><span style="font-size:11.5px;color:var(--dim)">排位 01</span></div>
+            <h3>深夜录音棚改词风波</h3>
+            <p>一段录音棚花絮显示歌词被临时改动，原作者与制作方各有一版说法，信息源可回溯到两条原始片段。</p>
+            <div class="card-tags"><span>录音棚花絮</span><span>歌词改动</span><span>双方回应</span></div>
+            <div class="card-meta"><span>讨论 4.2k</span><span>评分 <b>9.4</b></span></div>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="type hot">商务赛道</span><span style="font-size:11.5px;color:var(--dim)">排位 02</span></div>
+            <h3>联名款发售名单争议</h3>
+            <p>首发名单与预告名单不一致，部分买家晒出下单截图，品牌方暂未给出正式说明，属于典型的商务口径待确认条目。</p>
+            <div class="card-tags"><span>联名发售</span><span>名单差异</span><span>下单截图</span></div>
+            <div class="card-meta"><span>讨论 3.8k</span><span>评分 <b>8.9</b></span></div>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="type">行程赛道</span><span style="font-size:11.5px;color:var(--dim)">排位 03</span></div>
+            <h3>巡演加场城市投票</h3>
+            <p>官方账号发起加场城市投票，票数与实际场馆容量被拿来对照，讨论集中在"投了会不会真加"这一点上。</p>
+            <div class="card-tags"><span>巡演加场</span><span>城市投票</span><span>场馆容量</span></div>
+            <div class="card-meta"><span>讨论 3.1k</span><span>评分 <b>8.5</b></span></div>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="type new">旧料翻新</span><span style="font-size:11.5px;color:var(--dim)">排位 04</span></div>
+            <h3>旧访谈片段被翻出</h3>
+            <p>两年前的一段访谈被重新剪辑传播，原视频语境与剪辑版差异明显，属于需要对照原片再判断的条目。</p>
+            <div class="card-tags"><span>旧访谈</span><span>剪辑差异</span><span>原片对照</span></div>
+            <div class="card-meta"><span>讨论 2.6k</span><span>评分 <b>7.8</b></span></div>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="type">选手动态</span><span style="font-size:11.5px;color:var(--dim)">排位 05</span></div>
+            <h3>选手「阿栎」连续三天反超</h3>
+            <p>靠一条补充说明把信息完整度拉满，从第七位一路升到第五，是本周反超幅度最大的选手。</p>
+            <div class="card-tags"><span>选手反超</span><span>补充说明</span><span>完整度</span></div>
+            <div class="card-meta"><span>讨论 2.2k</span><span>评分 <b>7.6</b></span></div>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="type">观众侧</span><span style="font-size:11.5px;color:var(--dim)">排位 06</span></div>
+            <h3>决赛名单预测贴被删</h3>
+            <p>一份自称内部名单的预测贴短时间被删，截图仍在流传，但缺少发布者身份信息，可信度待定。</p>
+            <div class="card-tags"><span>决赛名单</span><span>预测贴</span><span>截图流传</span></div>
+            <div class="card-meta"><span>讨论 1.9k</span><span>评分 <b>7.2</b></span></div>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="type">创作赛道</span><span style="font-size:11.5px;color:var(--dim)">排位 07</span></div>
+            <h3>新歌 demo 流出时间线</h3>
+            <p>三段 demo 的流出时间被整理成时间线，最早一段比官方预告早了两周，来源指向不明。</p>
+            <div class="card-tags"><span>demo流出</span><span>时间线</span><span>来源待查</span></div>
+            <div class="card-meta"><span>讨论 1.7k</span><span>评分 <b>7.0</b></span></div>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="type">商务赛道</span><span style="font-size:11.5px;color:var(--dim)">排位 08</span></div>
+            <h3>代言物料提前曝光</h3>
+            <p>一组棚拍物料在官宣前流出，画面与品牌此前的风格路线一致，但发布时间仍以官宣为准。</p>
+            <div class="card-tags"><span>代言物料</span><span>提前曝光</span><span>官宣时间</span></div>
+            <div class="card-meta"><span>讨论 1.4k</span><span>评分 <b>6.8</b></span></div>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="type">行程赛道</span><span style="font-size:11.5px;color:var(--dim)">排位 09</span></div>
+            <h3>机场路透与行程表对不上</h3>
+            <p>路透时间与公开行程表差了半天，粉丝侧给出两种解释，属于需要等下一次行程更新再看的条目。</p>
+            <div class="card-tags"><span>机场路透</span><span>行程表</span><span>时间差</span></div>
+            <div class="card-meta"><span>讨论 1.1k</span><span>评分 <b>6.5</b></span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="sec" id="latest" aria-labelledby="latestTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="latestTitle">最新赛况：<span>今天更新了哪些条目</span></h2>
+            <p class="sec-desc">按更新时间倒序，含一句状态摘要</p>
+          </div>
+        </div>
+        <ul class="updates" id="latestList">
+          <li><span class="t">17:52</span><span class="n">深夜录音棚改词风波</span><span class="d">制作方补充第二版说明，原始片段仍可回溯</span><span class="pill">进决赛</span></li>
+          <li><span class="t">17:40</span><span class="n">联名款发售名单争议</span><span class="d">品牌客服口径统一为"以页面显示为准"</span><span class="pill">待观察</span></li>
+          <li><span class="t">17:21</span><span class="n">巡演加场城市投票</span><span class="d">票数前五城市与场馆容量对照表被整理</span><span class="pill">进决赛</span></li>
+          <li><span class="t">16:58</span><span class="n">选手「阿栎」连续三天反超</span><span class="d">补充说明获得高赞，完整度分升至本周最高</span><span class="pill">反超</span></li>
+          <li><span class="t">16:30</span><span class="n">旧访谈片段被翻出</span><span class="d">原片完整版被找出，剪辑差异点已标注三处</span><span class="pill">降位</span></li>
+          <li><span class="t">16:02</span><span class="n">决赛名单预测贴被删</span><span class="d">截图仍在传播，发布者身份无进一步线索</span><span class="pill">待观察</span></li>
+          <li><span class="t">15:44</span><span class="n">新歌 demo 流出时间线</span><span class="d">最早一段流出时间点被重新核对</span><span class="pill">复核中</span></li>
+          <li><span class="t">15:10</span><span class="n">代言物料提前曝光</span><span class="d">品牌方未回应，官宣时间维持原计划</span><span class="pill">待观察</span></li>
+          <li><span class="t">14:36</span><span class="n">机场路透与行程表对不上</span><span class="d">粉丝侧给出两种解释，均未附时间证据</span><span class="pill">降位</span></li>
+          <li><span class="t">13:20</span><span class="n">往期冠军条目回访</span><span class="d">上周冠军条目今日补上后续，仍留在观察区</span><span class="pill">回访</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="sec" id="cats" aria-labelledby="catsTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="catsTitle">赛道分类：<span>按瓜的类型找条目</span></h2>
+            <p class="sec-desc">点选分类可筛选上方热门擂台卡片</p>
+          </div>
+        </div>
+        <div class="cats" role="group" aria-label="按赛道筛选">
+          <a class="cat" href="#hotCards" data-filter="all"><b>全部赛道</b><span>9 条热门条目</span></a>
+          <a class="cat" href="#hotCards" data-filter="创作赛道"><b>创作赛道</b><span>录音棚、demo、改词</span></a>
+          <a class="cat" href="#hotCards" data-filter="商务赛道"><b>商务赛道</b><span>联名、代言、物料</span></a>
+          <a class="cat" href="#hotCards" data-filter="行程赛道"><b>行程赛道</b><span>巡演、机场、加场</span></a>
+          <a class="cat" href="#hotCards" data-filter="旧料翻新"><b>旧料翻新</b><span>旧访谈、剪辑、回访</span></a>
+          <a class="cat" href="#hotCards" data-filter="选手动态"><b>选手动态</b><span>反超、补充、排名</span></a>
+          <a class="cat" href="#hotCards" data-filter="观众侧"><b>观众侧讨论</b><span>预测、名单、投票</span></a>
+          <a class="cat" href="#hotCards" data-filter="all"><b>待观察区</b><span>未进决赛的条目</span></a>
+        </div>
+        <div id="noResult" role="status" aria-live="polite">没有匹配的条目，换个关键词或点「全部赛道」重新查看。</div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="sec" id="deep" aria-labelledby="deepTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="deepTitle">赛制深度解析：<span>排位是怎么算出来的</span></h2>
+            <p class="sec-desc">看懂评分三项，就知道该信哪条瓜</p>
+          </div>
+        </div>
+        <div class="deep">
+          <h3>三项打分到底在打什么</h3>
+          <p>每日大赛的排位不是投票数排名，而是三项打分加权：讨论量看的是"有多少人在认真讨论"，不是单纯转发；信息完整度看的是"这条瓜能不能追到源头"，包括原始片段、截图时间、发布者身份；后续进展看的是"结算前有没有新回应"。三项里，信息完整度权重最高，因为它直接决定这条瓜能不能被验证。</p>
+          <p>所以经常出现讨论量很高但排位不高的条目——热度不等于可信。反过来，有些条目讨论量一般，但原始片段清晰、各方回应齐全，排位反而更靠前。理解这一点，追更时就不会被最热闹的那条带偏。</p>
+
+          <h3>赛道划分与评判侧重</h3>
+          <p>赛道不是简单的内容标签，而是评判标准的切换。创作赛道看原始素材，商务赛道看官方口径，行程赛道看时间地点能不能对上，旧料翻新看原片与剪辑的差异，选手动态看补充说明的完整度，观众侧讨论看是否有可核实的发布者身份。</p>
+          <ul>
+            <li>创作赛道：原始片段、demo 时间点、改编授权说明</li>
+            <li>商务赛道：官宣时间、客服口径、页面显示与预告的差异</li>
+            <li>行程赛道：公开行程表、场馆容量、路透时间差</li>
+            <li>旧料翻新：原片语境、剪辑点、传播路径</li>
+            <li>选手动态：补充说明、完整度变化、反超幅度</li>
+            <li>观众侧讨论：发布者身份、截图时间、是否被删</li>
+          </ul>
+
+          <h3>「r星吃瓜每日大赛」和普通爆料号的区别</h3>
+          <p>普通爆料号通常是单条输出，发完就结束；每日大赛有明确的时效边界和跨天连续性。当天没进决赛的条目会进入待观察区，第二天可能带着新证据重新参赛。这意味着同一个瓜会有"第一天版本"和"第三天版本"，看排位时要留意条目是第几次上榜。</p>
+          <div class="compare">
+            <div>
+              <h4>每日大赛</h4>
+              <ul>
+                <li>有结算时间和排位变化</li>
+                <li>条目会带着新证据重新参赛</li>
+                <li>按赛道切换评判标准</li>
+                <li>信息完整度权重最高</li>
+              </ul>
+            </div>
+            <div>
+              <h4>普通爆料号</h4>
+              <ul>
+                <li>单条发布，缺少横向对比</li>
+                <li>后续进展往往不补</li>
+                <li>统一口径，不区分类型</li>
+                <li>热度优先，可信度次要</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>怎么判断一条瓜值不值得追</h3>
+          <p>先看它有没有原始素材，再看有没有二次回应，最后看它有没有被证伪。三样都没有的条目，讨论量再高也建议只当背景信息。r星吃瓜每日大赛的深度解析之所以把这三步放在前面，是因为大部分误判都发生在"只看标题就转发"这一步。</p>
+          <p>另一个实用判断是看条目第几次上榜。第一次上榜通常是爆发期，信息最乱；第二次上榜往往带着补充说明，可信度会明显提升；第三次还留在榜上的，多半是长期未解的悬案，追更价值反而下降。把这个节奏记住，通勤路上扫一眼排位就能大致判断该点开哪几条。</p>
+
+          <h3>选手反超的常见路径</h3>
+          <p>反超很少靠"发得更早"，多数靠"补得更全"。常见路径有三种：一是补充原始片段，把模糊截图换成完整视频；二是补上官方或当事方的回应，让单方说法变成双方对照；三是把时间线整理清楚，让零散信息能连成一条线。这三种路径都不需要新爆点，但都能显著抬高信息完整度分。</p>
+          <div class="note">看排位变化时，重点看"完整度"这一项的升降，而不是总分的绝对高低。总分受讨论量波动影响大，完整度更能反映条目质量。</div>
+
+          <h3>结算之后还会发生什么</h3>
+          <p>18:00 结算只是当日名次的终点，不是条目的终点。进决赛的条目会在次日进入"决赛跟踪"，未进决赛的进入"待观察区"，两种情况都可能在后续被重新翻出。对追更的人来说，结算后的一到两小时是信息补充的高峰期，很多二次回应都出现在这个时间段。</p>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="sec" id="guide" aria-labelledby="guideTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="guideTitle">追更指南：<span>四种看法，按你的时间选</span></h2>
+            <p class="sec-desc">从速览到深度，路径不同，结论一致</p>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step"><b>通勤速览：只看最新赛况</b><span>10 条摘要，每条一句话说清状态，3 分钟能读完，适合地铁上扫一眼。</span></div>
+          <div class="step"><b>标准阅读：热门擂台卡片</b><span>看条目看点、标签和评分，判断哪几条值得点开细看，大约 8 分钟。</span></div>
+          <div class="step"><b>深度追更：赛制解析 + 时间线</b><span>理解三项打分和赛道差异，再对照今日时间线看排位变化，适合睡前 20 分钟。</span></div>
+          <div class="step"><b>定向查找：搜索框 + 分类筛选</b><span>记得瓜名或选手名就直接搜，只记得类型就点赛道分类，两种方式都会即时过滤上方卡片。</span></div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="sec" id="faq" aria-labelledby="faqTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="faqTitle">常见问答：<span>追更前最常问的 6 个问题</span></h2>
+            <p class="sec-desc">围绕赛制、可信度与更新节奏</p>
+          </div>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>每日大赛一般几点结算，错过当天还能补看吗？</summary>
+            <div class="ans">结算时间固定在 18:00，结算后当日排位不再变动。错过当天可以补看，最新赛况按更新时间倒序列出全部条目，往期条目会进入待观察区或决赛跟踪，仍能查到当时的排位和后续进展。</div>
+          </details>
+          <details>
+            <summary>爆料擂台的条目可信度高吗，怎么判断真假？</summary>
+            <div class="ans">没有一条瓜能保证百分百为真，判断方法是看三项：有没有原始素材、有没有当事方二次回应、有没有被证伪。三项齐全的条目可信度明显更高；只有截图、没有时间点和发布者身份的，建议只当背景信息。</div>
+          </details>
+          <details>
+            <summary>创作赛道的瓜和商务赛道的瓜，看的时候有什么区别？</summary>
+            <div class="ans">创作赛道重点看原始片段和授权说明，剪辑版和原片的差异往往是关键；商务赛道重点看官方口径，客服回复、页面显示和预告名单是否一致，比讨论量更能说明问题。</div>
+          </details>
+          <details>
+            <summary>通勤路上时间少，看哪一块最省时间？</summary>
+            <div class="ans">直接看最新赛况列表，10 条摘要每条一句话，3 分钟能读完。如果只想追一条，用搜索框输入瓜名或选手名，页面会即时过滤出相关卡片，不用从头翻。</div>
+          </details>
+          <details>
+            <summary>选手反超一般靠什么，讨论量高就一定能进决赛吗？</summary>
+            <div class="ans">讨论量高不一定进决赛，信息完整度权重更高。反超通常靠补充原始片段、补上当事方回应、或把时间线整理清楚，这三种方式都能抬高完整度分。只看热度容易被带偏。</div>
+          </details>
+          <details>
+            <summary>同一件事第二天又上榜，是重复内容吗？</summary>
+            <div class="ans">不是简单重复。第二次上榜通常带着新证据或新回应，属于同一条目的新版本。看排位时留意条目是第几次上榜，第一次多是爆发期，第二次可信度更高，第三次还留着的一般是长期未解的悬案。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 评论 -->
+      <section class="sec" id="cmts" aria-labelledby="cmtsTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="cmtsTitle">观众评论：<span>14 条追更现场反馈</span></h2>
+            <p class="sec-desc">语气各异，含中性评价</p>
+          </div>
+        </div>
+        <div class="cmts">
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ffb648">柠</span><b>柠檬不加冰</b><time>17:55</time></div><p>录音棚那条我追了三天，制作方第二版说明出来后清楚多了，比一开始只有截图强太多。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8b7bff">路</span><b>路过的猹</b><time>17:48</time></div><p>通勤就看最新赛况，十条扫完刚好到站，这个长度挺合适。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4fd1a5">阿</span><b>阿栎观察员</b><time>17:36</time></div><p>选手反超那段分析说得对，补得全比发得早有用，这几天看排位变化很明显。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ff5d73">深</span><b>深夜追更人</b><time>17:20</time></div><p>联名名单那条还是没官方说明，客服口径也不算正式回应，先放待观察区比较稳妥。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ffb648">老</span><b>老瓜新吃</b><time>17:02</time></div><p>旧访谈被翻出来那条，原片和剪辑版确实差挺多，建议大家先看完整版再下结论。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8b7bff">赛</span><b>赛道爱好者</b><time>16:44</time></div><p>分类筛选好用，点创作赛道就只剩录音棚和 demo 那几条，不用一条条翻。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4fd1a5">小</span><b>小满不吃瓜</b><time>16:25</time></div><p>说实话有些条目讨论量虚高，完整度分低得离谱，还是得看深度解析那三项。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ff5d73">巡</span><b>巡演蹲票中</b><time>16:08</time></div><p>加场投票那条最关心，票数前五和场馆容量一对照，感觉有几个城市悬。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ffb648">临</span><b>临界点</b><time>15:50</time></div><p>决赛名单预测贴被删那条，截图没时间戳也没发布者信息，我倾向不信。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8b7bff">片</span><b>片段收藏家</b><time>15:32</time></div><p>demo 流出时间线整理得挺细，最早那段比预告早两周这个点之前没人提。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4fd1a5">中</span><b>中立看客</b><time>15:14</time></div><p>整体还行，就是有些条目的看点写得比实际信息多，期待后面补充。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ff5d73">睡</span><b>睡前二十分钟</b><time>14:56</time></div><p>深度解析那段对比表挺有用，一眼看出每日大赛和普通爆料号差在哪。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ffb648">机</span><b>机场路透党</b><time>14:38</time></div><p>路透和行程表对不上那条，粉丝两种解释都没给时间证据，等下一次更新再看。</p></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8b7bff">回</span><b>回访专业户</b><time>14:10</time></div><p>往期冠军回访这个设置不错，很多瓜结算后就没下文了，能补后续挺好。</p></div>
+        </div>
+      </section>
+
+      <!-- 9 资讯 -->
+      <section class="sec" id="news" aria-labelledby="newsTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="newsTitle">相关资讯：<span>近期值得留意的 6 条</span></h2>
+            <p class="sec-desc">日期为站内记录时间</p>
+          </div>
+        </div>
+        <div class="news">
+          <article><time>2025-06-12</time><div><h3>多平台加强对未证实爆料的标注要求</h3><p>部分平台开始要求在爆料类内容上加注信息来源，未标注的条目在推荐权重上会受影响。</p></div></article>
+          <article><time>2025-06-10</time><div><h3>联名发售名单差异引发的讨论持续升温</h3><p>买家晒单与预告名单不一致的情况并非首次出现，品牌方通常在发售后一到两天给出说明。</p></div></article>
+          <article><time>2025-06-08</time><div><h3>巡演加场投票机制被更多主办方采用</h3><p>投票结果与实际加场之间并非一一对应，场馆容量和报批周期仍是主要限制因素。</p></div></article>
+          <article><time>2025-06-05</time><div><h3>旧访谈剪辑传播的辨识方法讨论增多</h3><p>对照原片完整版、查看剪辑点前后语境，成为观众判断旧料可信度的常用做法。</p></div></article>
+          <article><time>2025-06-02</time><div><h3>选手排名类内容开始引入完整度指标</h3><p>单纯按讨论量排序的做法正在被替换，信息完整度和后续进展逐渐成为主要参考项。</p></div></article>
+          <article><time>2025-05-29</time><div><h3>爆料条目的跨天跟踪成为常见需求</h3><p>观众更关注条目在第二天、第三天是否有新回应，单次发布的模式难以满足追更需求。</p></div></article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="sec" id="rel" aria-labelledby="relTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="relTitle">相关推荐：<span>按内容方向继续看</span></h2>
+            <p class="sec-desc">与热门擂台角度不同，偏方向索引</p>
+          </div>
+        </div>
+        <div class="rel">
+          <a href="#hot"><i>01</i>录音棚花絮与改词争议合集</a>
+          <a href="#hot"><i>02</i>联名款发售名单差异追踪</a>
+          <a href="#hot"><i>03</i>巡演加场城市投票对照</a>
+          <a href="#hot"><i>04</i>旧访谈原片与剪辑版对照</a>
+          <a href="#latest"><i>05</i>选手反超案例与完整度分析</a>
+          <a href="#latest"><i>06</i>决赛名单预测贴的可信度判断</a>
+          <a href="#deep"><i>07</i>三项打分权重与排位逻辑</a>
+          <a href="#guide"><i>08</i>通勤速览与睡前追更路径</a>
+        </div>
+      </section>
+
+      <!-- 11 时间线 -->
+      <section class="sec" id="timeline" aria-labelledby="tlTitle">
+        <div class="sec-head">
+          <div>
+            <h2 id="tlTitle">今日时间线：<span>从候选到结算的关键节点</span></h2>
+            <p class="sec-desc">按小时记录，便于回看排位变化</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="tl"><time>09:10</time><h3>候选池开启</h3><p>当日条目陆续进入候选池，按赛道初步归位。</p></div>
+          <div class="tl"><time>11:30</time><h3>首轮完整度核对</h3><p>缺少原始素材的条目被标注，讨论量暂不计入排位。</p></div>
+          <div class="tl"><time>13:20</time><h3>往期冠军回访</h3><p>上周冠军条目补上后续，仍留在观察区。</p></div>
+          <div class="tl"><time>15:10</time><h3>二次回应集中出现</h3><p>当事方与品牌方陆续给出说明，多条排位发生变化。</p></div>
+          <div class="tl"><time>16:58</time><h3>选手反超窗口</h3><p>补充说明获得高赞，完整度分拉升，出现本周最大反超。</p></div>
+          <div class="tl"><time>18:00</time><h3>当日结算</h3><p>排位固定，进决赛与待观察条目分流，次日继续跟踪。</p></div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 右栏 -->
+    <aside class="col-r" aria-label="辅助阅读">
+      <div class="side-card">
+        <div class="rail-title">页内目录</div>
+        <nav class="toc" aria-label="页内目录">
+          <a href="#intro">擂台简介</a>
+          <a href="#hot">今日热门擂台</a>
+          <a href="#latest">最新赛况</a>
+          <a href="#cats">赛道分类</a>
+          <a href="#deep">赛制深度解析</a>
+          <a href="#guide">追更指南</a>
+          <a href="#faq">常见问答</a>
+          <a href="#cmts">观众评论</a>
+          <a href="#news">相关资讯</a>
+          <a href="#rel">相关推荐</a>
+          <a href="#timeline">今日时间线</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <div class="rail-title">今日热门条目</div>
+        <ol class="rank">
+          <li><span class="no top">1</span><a href="#hot">深夜录音棚改词风波</a><span class="heat">9.4</span></li>
+          <li><span class="no top">2</span><a href="#hot">联名款发售名单争议</a><span class="heat">8.9</span></li>
+          <li><span class="no">3</span><a href="#hot">巡演加场城市投票</a><span class="heat">8.5</span></li>
+          <li><span class="no">4</span><a href="#hot">旧访谈片段被翻出</a><span class="heat">7.8</span></li>
+          <li><span class="no">5</span><a href="#hot">选手阿栎连续反超</a><span class="heat">7.6</span></li>
+          <li><span class="no">6</span><a href="#hot">决赛名单预测贴被删</a><span class="heat">7.2</span></li>
+        </ol>
+      </div>
+      <div class="side-card">
+        <div class="rail-title">延伸阅读</div>
+        <div class="extend">
+          <a href="#deep">三项打分权重怎么理解</a>
+          <a href="#deep">创作赛道与商务赛道区别</a>
+          <a href="#guide">通勤三分钟怎么看</a>
+          <a href="#faq">条目第几次上榜更重要</a>
+          <a href="#timeline">结算后一小时的信息高峰</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-brand">
+      <div class="logo">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#241936"/>
+          <path d="M16 20h32v7H16z" fill="#ffb648"/>
+          <path d="M16 33h20v7H16z" fill="#8b7bff"/>
+          <circle cx="46" cy="43" r="8" fill="#ff5d73"/>
+        </svg>
+        <span class="logo-txt">r星吃瓜<em>每日大赛</em></span>
+      </div>
+      <p>每天一场爆料擂台，把零散瓜整理成可读条目、可比赛况与可追选手，适合通勤速览与睡前追更。</p>
+    </div>
+    <div class="foot-col">
+      <h4>擂台栏目</h4>
+      <a href="#hot">今日热门擂台</a>
+      <a href="#latest">最新赛况</a>
+      <a href="#cats">赛道分类</a>
+      <a href="#deep">赛制深度解析</a>
+    </div>
+    <div class="foot-col">
+      <h4>阅读路径</h4>
+      <a href="#guide">追更指南</a>
+      <a href="#faq">常见问答</a>
+      <a href="#timeline">今日时间线</a>
+      <a href="#rel">相关推荐</a>
+    </div>
+    <div class="foot-col">
+      <h4>内容方向</h4>
+      <a href="#hot">录音棚与改词</a>
+      <a href="#hot">联名与代言</a>
+      <a href="#hot">巡演与行程</a>
+      <a href="#cmts">观众评论</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2025 r星吃瓜每日大赛 · 内容门户示例</span>
+    <span>部分内容为示例数据，仅用于展示页面结构</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#hotCards .card'));
+  var latest = Array.prototype.slice.call(document.querySelectorAll('#latestList li'));
+  var noResult = document.getElementById('noResult');
+  var catBtns = Array.prototype.slice.call(document.querySelectorAll('.cat'));
+
+  function match(el, kw){
+    return el.textContent.toLowerCase().indexOf(kw) > -1;
+  }
+
+  function runFilter(){
+    var kw = (q.value || '').trim().toLowerCase();
+    var activeCat = document.querySelector('.cat.is-active');
+    var cat = activeCat ? activeCat.getAttribute('data-filter') : 'all';
+    var shown = 0;
+
+    cards.forEach(function(c){
+      var okKw = !kw || match(c, kw);
+      var okCat = cat === 'all' || c.textContent.indexOf(cat) > -1;
+      var show = okKw && okCat;
+      c.classList.toggle('is-hidden', !show);
+      if(show) shown++;
+    });
+
+    latest.forEach(function(li){
+      var show = !kw || match(li, kw);
+      li.classList.toggle('is-hidden', !show);
+    });
+
+    noResult.style.display = (shown === 0) ? 'block' : 'none';
+  }
+
+  function doSearch(e){
+    if(e) e.preventDefault();
+    runFilter();
+    var target = document.getElementById('hot');
+    if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    return false;
+  }
+  window.doSearch = doSearch;
+
+  q.addEventListener('input', runFilter);
+
+  catBtns.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      catBtns.forEach(function(b){ b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      runFilter();
+      var target = document.getElementById('hot');
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+})();
+</script>
+</body>
+            </html>
